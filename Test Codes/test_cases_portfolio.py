@@ -28,3 +28,9 @@ def test_ViewHobbies():
 
 def test_ViewCCA():
     assert "CCAs"
+
+def test_CreateComment():
+    assert "John Low"
+
+def test_EmptyComment():
+    assert 

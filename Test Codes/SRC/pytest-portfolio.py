@@ -1,5 +1,6 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
+from selenium.webdriver.common.keys import Keys
 import pytest
 
 def NavToBlog():
@@ -62,6 +63,13 @@ def ViewHobbies():
 def ViewCCA():
     return browser.find_element_by_xpath("(//h1)[3]")
 
+def CreateComment():
+    doc = browser.find_element_by_xpath("//input[contains(@name, 'author')]").send_keys("John Low")
+    doc = browser.find_element_by_xpath("//textarea").send_keys("Your Resume is interesting")
+    doc = browser.find_element_by_xpath("//button[contains(@type, 'submit')]")
+    doc.click()
+    return browser.find_element_by_xpath("//*[contains(text(), 'John Low')]")
+
 
 
 browser = webdriver.Chrome()
@@ -71,6 +79,7 @@ browser.get('http://localhost:8000/projects/')
 NavToBlog()
 NavToBlogPages()
 NavToComment()
+CreateComment()
 ViewSelfIntro()
 
 #Related to Projects
