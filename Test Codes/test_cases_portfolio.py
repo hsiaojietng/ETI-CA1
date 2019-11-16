@@ -16,15 +16,15 @@ def test_NavToBlogPages():
 
 def test_NavToProjectPages():
     assert "About the project"
-
-def test_ViewResume
+    
+def test_ViewResume():
     assert "Resume"
 
-def test_ViewSelfIntro
+def test_ViewSelfIntro():
     assert "Self-Intro"
 
-def test_ViewHobbies
+def test_ViewHobbies():
     assert "Hobbies"
 
-def test_ViewCCA:
+def test_ViewCCA():
     assert "CCAs"
