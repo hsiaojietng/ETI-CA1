@@ -81,7 +81,7 @@ DeleteBlog()
 
 DeleteCategory()
 
-
+browser.close()
 
 
 

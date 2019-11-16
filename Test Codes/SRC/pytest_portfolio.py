@@ -32,13 +32,13 @@ def NavToComment():
 
 def NavToBlogPages():
     #Click into a blog
-    doc = browser.find_element_by_xpath("(//a[contains(@href, '/blog/3/')])")
+    doc = browser.find_element_by_xpath("(//h2//a)[2]")
     doc.click()
     return browser.find_element_by_xpath("//h1")
 
 def NavToProjectPages():
     #Click into a Project
-    doc = browser.find_element_by_xpath("(//a[contains(@href, '/projects/1/')])")
+    doc = browser.find_element_by_xpath("(//div//div//div//a)[1]")
     doc.click()
     return browser.find_element_by_xpath("(//h5)[1]")
 
@@ -53,7 +53,7 @@ def ViewSelfIntro():
     doc = browser.find_element_by_xpath("(//a[contains(@class, 'nav-link')])[2]")
     doc.click()
     #Click into a SelfIntro
-    doc = browser.find_element_by_xpath("(//a[contains(@href, '/blog/4/')])")
+    doc = browser.find_element_by_xpath("(//h2//a)[1]")
     doc.click()
     return browser.find_element_by_xpath("//h1")
 
@@ -87,6 +87,8 @@ NavToHome()
 ViewHobbies()
 ViewCCA()
 NavToProjectPages()
+
+browser.close()
 
 
 

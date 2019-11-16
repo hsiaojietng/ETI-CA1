@@ -1,20 +1,20 @@
 import pytest
-from SRC.pytest import *
+from SRC.pytest_admin import *
 
-def test_CreateCategory:
+def test_CreateCategory():
     assert "success"
 
-def test_DeleteCategory:
+def test_DeleteCategory():
     assert "success"
 
-def test_EditCategory
+def test_EditCategory():
     assert "success"
 
-def test_CreateBlog:
+def test_CreateBlog():
     assert "success"
 
-def test_DeleteBlog:
+def test_DeleteBlog():
     assert "success"
     
-def test_EditBlog
+def test_EditBlog():
     assert "success"

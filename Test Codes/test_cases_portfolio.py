@@ -1,5 +1,5 @@
 import pytest
-from SRC.pytest import *
+from SRC.pytest_portfolio import *
 
 def test_NavToHome():
     assert "Blog Index"
@@ -32,5 +32,3 @@ def test_ViewCCA():
 def test_CreateComment():
     assert "John Low"
 
-def test_EmptyComment():
-    assert 
