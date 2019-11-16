@@ -2,19 +2,19 @@ import pytest
 from SRC.pytest import *
 
 def test_CreateCategory:
-    assert "added successfully"
+    assert "success"
 
 def test_DeleteCategory:
-    assert "deleted successfully"
+    assert "success"
 
 def test_EditCategory
-    assert "changed successfully"
+    assert "success"
 
 def test_CreateBlog:
-    assert "added successfully"
+    assert "success"
 
 def test_DeleteBlog:
-    assert "deleted successfully"
+    assert "success"
     
 def test_EditBlog
-    assert "changed successfully"
+    assert "success"
