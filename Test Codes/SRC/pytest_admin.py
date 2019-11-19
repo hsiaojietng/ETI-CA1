@@ -63,6 +63,19 @@ def EditBlog():
     doc.click()
     return browser.find_element_by_xpath("//li[contains(@class, 'success')]").get_attribute("class")
 
+def CreateUser():
+    browser.get("http://localhost:8000/admin/auth/user/")
+    doc = browser.find_element_by_xpath("//a[contains(@class, 'addlink')]")
+    doc.click()
+    browser.find_element_by_xpath("//input[contains(@name, 'username')]").send_keys('JohnnyDoe')
+    browser.find_element_by_xpath("//input[contains(@name, 'password1')]").send_keys('DjangoProject@1')
+    browser.find_element_by_xpath("//input[contains(@name, 'password2')]").send_keys('DjangoProject@1')
+    doc = browser.find_element_by_xpath("//input[contains(@name, '_save')]")
+    doc.click()
+    return browser.find_element_by_xpath("//li[contains(@class, 'success')]").get_attribute("class")
+    
+    
+
 
 
 browser = webdriver.Chrome()
@@ -80,6 +93,8 @@ EditBlog()
 DeleteBlog()
 
 DeleteCategory()
+
+CreateUser()
 
 browser.close()
 

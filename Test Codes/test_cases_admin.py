@@ -20,4 +20,4 @@ def test_EditBlog():
     assert "success"
 
 def test_CreateUser():
-    assert "JohnnyDoe"
+    assert "success"
