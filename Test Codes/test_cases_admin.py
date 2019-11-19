@@ -21,3 +21,6 @@ def test_EditBlog():
 
 def test_CreateUser():
     assert "success"
+
+def test_DeleteUser():
+    assert "success"
