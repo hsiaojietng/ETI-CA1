@@ -7,3 +7,4 @@
 [1116/142251.628:ERROR:exception_snapshot_win.cc(98)] thread ID 7960 not found in process
 [1116/142407.404:ERROR:process_reader_win.cc(123)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
 [1116/142407.404:ERROR:exception_snapshot_win.cc(98)] thread ID 1936 not found in process
+[1119/185702.947:ERROR:filesystem_win.cc(148)] DeleteFile C:\Users\NGHSIA~1\AppData\Local\Temp\scoped_dir14596_420426570\Crashpad\reports\032f6a87-a72d-41a4-ba1d-855344039cfa.dmp: The process cannot access the file because it is being used by another process. (0x20)
