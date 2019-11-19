@@ -73,7 +73,16 @@ def CreateUser():
     doc = browser.find_element_by_xpath("//input[contains(@name, '_save')]")
     doc.click()
     return browser.find_element_by_xpath("//li[contains(@class, 'success')]").get_attribute("class")
-    
+
+def DeleteUser():
+    browser.get("http://localhost:8000/admin/auth/user/")
+    doc = browser.find_element_by_xpath("(//th[contains(@class, 'field-username')]//a)[1]")
+    doc.click()
+    doc = browser.find_element_by_xpath("//p//a[contains(@class, 'deletelink')]")
+    doc.click()
+    doc = browser.find_element_by_xpath("//div//input[contains(@type, 'submit')]")
+    doc.click()
+    return browser.find_element_by_xpath("//li[contains(@class, 'success')]").get_attribute("class")
     
 
 
@@ -95,6 +104,7 @@ DeleteBlog()
 DeleteCategory()
 
 CreateUser()
+DeleteUser()
 
 browser.close()
 
