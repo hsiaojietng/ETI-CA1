@@ -19,3 +19,5 @@ def test_DeleteBlog():
 def test_EditBlog():
     assert "success"
 
+def test_CreateUser():
+    assert "JohnnyDoe"
