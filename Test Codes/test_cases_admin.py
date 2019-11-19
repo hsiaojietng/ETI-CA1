@@ -18,3 +18,4 @@ def test_DeleteBlog():
     
 def test_EditBlog():
     assert "success"
+
