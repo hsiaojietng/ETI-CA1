@@ -32,6 +32,9 @@ def test_ViewCCA():
 def test_CreateComment():
     assert "John Low"
 
+def test_ReadMoreProject():
+    assert "About the project:"
+
 '''@pytest.mark.django_db
 def test_CreateProject():
     project = Project.create(

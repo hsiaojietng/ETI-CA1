@@ -5,11 +5,8 @@ import pytest
 
 def NavToBlog():
     #Click on hamburger button
-    try:
-        doc = browser.find_element_by_xpath("(//span[contains(@class, 'navbar-toggler-icon')])")
-        doc.click()
-    except:
-        pass
+    doc = browser.find_element_by_xpath("(//span[contains(@class, 'navbar-toggler-icon')])")
+    doc.click()
     #Click on Home link
     doc = browser.find_element_by_xpath("(//a[contains(@class, 'nav-link')])[2]")
     doc.click()
@@ -17,11 +14,8 @@ def NavToBlog():
 
 def NavToHome():
     #Click on hamburger button
-    try:
-        doc = browser.find_element_by_xpath("(//span[contains(@class, 'navbar-toggler-icon')])")
-        doc.click()
-    except:
-        pass
+    doc = browser.find_element_by_xpath("(//span[contains(@class, 'navbar-toggler-icon')])")
+    doc.click()
     #Click on Blog link
     doc = browser.find_element_by_xpath("(//a[contains(@class, 'nav-link')])[1]")
     doc.click()
@@ -44,11 +38,8 @@ def NavToProjectPages():
 
 def ViewSelfIntro():
     #Click on hamburger button
-    try:
-        doc = browser.find_element_by_xpath("(//span[contains(@class, 'navbar-toggler-icon')])")
-        doc.click()
-    except:
-        pass
+    doc = browser.find_element_by_xpath("(//span[contains(@class, 'navbar-toggler-icon')])")
+    doc.click()
     #Click home link
     doc = browser.find_element_by_xpath("(//a[contains(@class, 'nav-link')])[2]")
     doc.click()
