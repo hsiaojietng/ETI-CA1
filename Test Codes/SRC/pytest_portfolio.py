@@ -61,6 +61,13 @@ def CreateComment():
     doc.click()
     return browser.find_element_by_xpath("//*[contains(text(), 'John Low')]")
 
+def ReadMoreProject():
+    doc = browser.get('http://localhost:8000/projects/')
+    doc = browser.find_element_by_xpath("(//a[contains(@class, 'btn btn-primary')])[1]")
+    doc.click()
+    return browser.find_element_by_xpath("(//div//h5)[1]")
+    
+
 
 
 browser = webdriver.Chrome()
@@ -78,6 +85,7 @@ NavToHome()
 ViewHobbies()
 ViewCCA()
 NavToProjectPages()
+ReadMoreProject()
 
 browser.close()
 
